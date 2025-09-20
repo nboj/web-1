@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lecture 5 - HTTP(S), The Web Browser, Web Servers, &amp; History of HTML</title>
+</head>
+
+<body>
+    <header>
+        <!--TODO: Turn this into display: flex for horizontal layout-->
+        <nav>
+            <menu>
+                <li><a href="./lecture-1.html">Lecture 1</a></li>
+                <li><a href="./lecture-2.html">Lecture 2</a></li>
+                <li><a href="./lecture-3.html">Lecture 3</a></li>
+                <li><a href="./lecture-4.html">Lecture 4</a></li>
+                <li><a href="./lecture-5.html">Lecture 5</a></li>
+                <li><a href="./lab1.html">Lab 1</a></li>
+            </menu>
+            <a href="./index.html">← Back</a>
+        </nav>
+    </header>
+    <article>
+        <h1>Lecture 5</h1>
+        <h2>HyperText Transfer Protocol</h2>
+        <p>Establishes a TCP connection on port 80 (by default). The server waits for the<br>
+            request, then responds with:</p>
+        <ul>
+            <li>Headers</li>
+            <li>Response code</li>
+            <li>An optional message (which can include files)</li>
+        </ul>
+        <p>Request methods:</p>
+        <ul>
+            <li>GET</li>
+            <li>POST</li>
+            <li>PUT</li>
+            <li>DELETE</li>
+        </ul>
+        <p>Less common methods:</p>
+        <ul>
+            <li>CONNECT</li>
+            <li>TRACE</li>
+            <li>OPTIONS</li>
+        </ul>
+        <h2>Web Browsers</h2>
+        <p>Parses HTML, CSS, and Javascript in order to render websites.</p>
+        <figure>
+            <img height="400" src="./images/web-1-proj-1-browser_rendering_performance.png"
+                title="Performance Metrics Visualized" alt="Performance Metrics Visualized">
+            <figcaption><a href="./images/web-1-proj-1-browser_rendering_performance.png">Source</a></figcaption>
+        </figure>
+        <p>Performance Metrics (Can get from <a href="https://lighthouse-metrics.com/"
+                target="_blank"><strong>Lighthouse</strong>&#8599;</a>):</p>
+        <ul>
+            <li>Time to First Byte (TTFB)</li>
+            <li>First Paint (FP)</li>
+            <li>First Contentful Paint (FCP)</li>
+            <li>First Meaningful Paint (FMP)</li>
+            <li>Largest Contentful Paint (LCP)</li>
+            <li>Time to Interactive (TTI)</li>
+            <li>On load</li>
+            <li>Cumulative Layout Shift (CLS)</li>
+        </ul>
+        <h2>Web Servers</h2>
+        <p>A <strong>web server</strong> is simply just a computer which provides <em>services</em> in<br>
+            different ways.</p>
+        <ul>
+            <li>Backend API's</li>
+            <li>Databases</li>
+            <li>etc.</li>
+        </ul>
+        <h2>What is HTML and where it comes from</h2>
+        <p>HTML is not a programming language; it is a <strong>markup language</strong>. This means<br>
+            structure only, no styling, no functionality, just structure.</p>
+        <figure>
+            <img width="800" src="./images/web-1-proj-1-early_html_timeline.png" title="Timeline of HTML's history"
+                alt="Timeline of HTML's history">
+            <figcaption><a href="./images/web-1-proj-1-early_html_timeline.png">Source</a></figcaption>
+        </figure>
+        <p>XHTML (a type of XML) which was a version of HTML that used<br>
+            stricter XML</p>
+        <p>The goal was to have a more predictable and generalized format which allowed<br>
+            better rendering with less errors because browsers have to account for less</p>
+        <p>HTML5 <a href="https://whatwg.org/" target="_blank">WHATWG&#8599;</a> came up with a better version of HTML
+            called HTML5 which was<br> adopted by W3C in 2009</p>
+    </article>
+    <footer>
+        <hr>
+        <small><em>Christian Auman &copy; 2025</em></small>
+    </footer>
+</body>
+
+</html>

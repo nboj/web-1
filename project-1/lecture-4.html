@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lecture 4 - Protocols, DNS, and URLS</title>
+</head>
+
+<body>
+    <header>
+        <!--TODO: Turn this into display: flex for horizontal layout-->
+        <nav>
+            <menu>
+                <li><a href="./lecture-1.html">Lecture 1</a></li>
+                <li><a href="./lecture-2.html">Lecture 2</a></li>
+                <li><a href="./lecture-3.html">Lecture 3</a></li>
+                <li><a href="./lecture-4.html">Lecture 4</a></li>
+                <li><a href="./lecture-5.html">Lecture 5</a></li>
+                <li><a href="./lab1.html">Lab 1</a></li>
+            </menu>
+            <a href="./index.html">← Back</a>
+        </nav>
+    </header>
+    <article>
+        <h1>Lecture 4</h1>
+        <h2>Internet Protocols</h2>
+        <p>A <strong>protocol</strong> is a set of rules that devices aggree to follow so that they can<br>
+            communicate reliably (TCP/IP are examples of protocols)</p>
+        <figure>
+            <img height="400" src="./images/web-1-proj-1-a_layered_architecture.png" title="Networking Layers"
+                alt="Networking Layers">
+            <figcaption><a href="./images/web-1-proj-1-a_layered_architecture.png">Source</a></figcaption>
+        </figure>
+        <p>Originally, there were four layers. Today, there are seven layers in networking.</p>
+        <dl>
+            <dt><strong>Link Layer</strong></dt>
+            <dd>
+                <p>The lowest layer responsible for transmission and propagation of data.</p>
+                <p><strong>MAC</strong> (media access control) <strong>address</strong> is an identifier given to
+                    every<br>
+                    NIC (network interface card).</p>
+            </dd>
+            <dt>
+                <strong>Internet Layer</strong>
+            </dt>
+            <dd>
+                <p>Routes traffic between communication partners acrosss networks.</p>
+                <p><strong>IP</strong> (Internet Protocol) a logical address that uniquely identify destinations<br>
+                    on the Internet. Everything connected to the internet has an IP address</p>
+                <p><strong>Port Address Translation</strong> (PAT) is the reason we can still use ipv4 addresses,<br>
+                    and not blow up the internet. A router turns any connected private ip address into<br>
+                    one outward facing IP address which dramatically reduces the count<br>
+                    of public IP addresses.</p>
+            </dd>
+            <dt>
+                <strong>Transport Layer</strong>
+            </dt>
+            <dd>
+                <p>Ensures transmissions arrive in order and without error.</p>
+                <figure>
+                    <img height="400" src="./images/web-1-proj-1-transport_layer_example.png"
+                        title="Diagram showing TCP protoco" alt="Diagram showing TCP protoco">
+                    <figcaption><a href="./images/web-1-proj-1-transport_layer_example.png">Source</a></figcaption>
+                </figure>
+                <p><strong>Transmission Control Protocol</strong> (TCP)</p>
+                <ul>
+
+                    <li>The most common transport protocol used in web browsing.
+                    <li>Each packet contains a header with a sequence number which allows ordered<br>
+                        reconstrucion of the original message
+                    <li> Every packet acknowledges its successful arrival back to the sender (<strong>ACK</strong>)
+                    <li>If an <strong>ACK</strong> is not recieved in a given time, restransmit the packet
+                    <li><strong>guaranteed</strong> that the message has been sent once you receive the
+                        <strong>ACK</strong>
+                </ul>
+            </dd>
+            <dt>
+                <strong>Application Layer</strong>
+            </dt>
+            <dd>
+                <p>Implement process-to-process communication</p>
+                <ol>
+                    <li>HTTP(S)</li>
+                    <li>SSH</li>
+                    <li>FTP</li>
+                    <li>POP/IMAP/SMTP</li>
+                    <li>DNS</li>
+                </ol>
+            </dd>
+        </dl>
+        <h2>Domain Name System</h2>
+        <p>Resolves domain names to IP addresses</p>
+        <p>Humans better remember names than they do numbers. Therefore we use DNS as an<br>
+            abstraction to IP addresses</p>
+        <figure>
+            <img height="400" src="./images/web-1-proj-1-dns_overview.png" title="DNS Diagram" alt="DNS Diagram">
+            <figcaption><a href="./images/web-1-proj-1-dns_overview.png">Source</a></figcaption>
+        </figure>
+        <h2>Uniform Resource Locators (URLS)</h2>
+        <p>Let clients request particular resources (files) from the server</p>
+        <ol>
+            <li>the protocol used to connect</li>
+            <li>the domain (or IP address) to connect to</li>
+        </ol>
+        <figure>
+            <img height="400" src="./images/web-1-proj-1-hypertext_transfer_protocol.png"
+                title="Diagram of HTTPS communication" alt="Diagram of HTTPS communication">
+            <figcaption><a href="./images/web-1-proj-1-hypertext_transfer_protocol.png">Source</a></figcaption>
+        </figure>
+    </article>
+    <footer>
+        <hr>
+        <small><em>Christian Auman &copy; 2025</em></small>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lecture 3 - The Internet &amp; Working in Web Development</title>
+</head>
+
+<body>
+    <header>
+        <!--TODO: Turn this into display: flex for horizontal layout-->
+        <nav>
+            <menu>
+                <li><a href="./lecture-1.html">Lecture 1</a></li>
+                <li><a href="./lecture-2.html">Lecture 2</a></li>
+                <li><a href="./lecture-3.html">Lecture 3</a></li>
+                <li><a href="./lecture-4.html">Lecture 4</a></li>
+                <li><a href="./lecture-5.html">Lecture 5</a></li>
+                <li><a href="./lab1.html">Lab 1</a></li>
+            </menu>
+            <a href="./index.html">← Back</a>
+        </nav>
+    </header>
+    <article>
+        <h1>Lecture 3</h1>
+        <h2>Where is the Internet (network of networks)</h2>
+        <p>A common representation is to think of the Internet as a cloud. Millions of copper<br>
+            and fiber optic cables connecting millions of server computers and other<br>
+            networked devices!</p>
+        <h3>From the Computer to Outside the Home</h3>
+        <figure>
+            <img height="400" src="images/web-1-proj-1-computer_to_outside_the_home.png"
+                title="Overview of the connection from computer to outside the home"
+                alt="Overview of the connection from computer to outside the home">
+            <figcaption><a href="images/web-1-proj-1-computer_to_outside_the_home.png">Source</a></figcaption>
+        </figure>
+        <p>The <strong>broadband modem</strong> links your traffic to an outside distribution hub. It<br>
+            does not route any traffic. It's more of a gate between digital traffic and<br>
+            physical medium (fiber/coax/DSL). The hub (head end) is usually provided by the<br>
+            internet service provider (ISP), and links up multiple houses/buildings to<br>
+            the hub (head end).</p>
+        <p>The <strong>wireless router</strong> forwards data packets from one network to another (like a<br>
+            normal router), except it receives packets wirelessly</p>
+        <figure>
+            <img height="400" src="./images/web-1-proj-1-home_to_ocean_edge.png"
+                title="Diagram showing network from house to ocean" alt="Diagram showing network from house to ocean">
+            <figcaption><a href="./images/web-1-proj-1-home_to_ocean_edge.png">Source</a></figcaption>
+        </figure>
+
+        <p>From that <strong>head end</strong>, higher bandwidth connections lead to a central ISP<br>
+            which sends that traffic to an Internet Exchange Point (ISP Point). Data Centers<br>
+            are usually directly connected here, as they require very high bandwidth. Then<br>
+            from the ISP point, it goes to the Landing Station which connnects to wires<br>
+            under the ocean.</p>
+        <h2>Working in Web Development</h2>
+        <figure>
+            <img height="400" src="images/web-1-proj-1-working_in_web_dev.png"
+                title="Web Development Roles and Categories" alt="Web Development Roles and Categories">
+            <figcaption><a href="images/web-1-proj-1-working_in_web_dev.png">Source</a></figcaption>
+        </figure>
+        <p>There&apos;s more roles in Web Development than you might have first thought.</p>
+    </article>
+    <footer>
+        <hr>
+        <small><em>Christian Auman &copy; 2025</em></small>
+    </footer>
+</body>
+
+</html>

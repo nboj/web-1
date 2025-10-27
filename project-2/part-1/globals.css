@@ -1,3 +1,13 @@
+.nav-menu>li::after {
+    content: "|";
+    padding: 0.3rem;
+}
+
+.nav-menu>li:last-of-type::after {
+    content: "";
+    padding: 0;
+}
+
 menu {
     display: flex;
     margin: 0;
@@ -5,21 +15,11 @@ menu {
     align-items: center;
 }
 
-menu > li {
+menu>li {
     display: flex;
     justify-content: center;
     align-items: center;
     list-style: none;
-}
-
-nav > menu > li::after {
-    content: "|";
-    padding: .3rem;
-}
-
-nav > menu > li:last-of-type::after {
-    content: "";
-    padding: 0;
 }
 
 a {
@@ -31,6 +31,6 @@ a {
     gap: 1rem;
 }
 
-.function-menu > li > a {
-    gap: .3rem;
+.function-menu>li>a {
+    gap: 0.3rem;
 }

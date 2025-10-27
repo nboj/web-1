@@ -1,0 +1,36 @@
+menu {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+menu > li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+nav > menu > li::after {
+    content: "|";
+    padding: .3rem;
+}
+
+nav > menu > li:last-of-type::after {
+    content: "";
+    padding: 0;
+}
+
+a {
+    display: inline-flex;
+    align-items: center;
+}
+
+.function-menu {
+    gap: 1rem;
+}
+
+.function-menu > li > a {
+    gap: .3rem;
+}

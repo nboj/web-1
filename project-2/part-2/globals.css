@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap");
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.3rem;
+}
+
+h6 {
+    font-size: 1.1rem;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+body {
+    background: url("../images/art-background4.jpg");
+    background-size: cover;
+    background-position: top;
+    padding: 1rem 2rem;
+    container: body / inline-size;
+}
+
+body>* {
+    max-width: 50rem;
+    width: 100cqw;
+    backdrop-filter: blur(3px);
+    box-shadow: 1rem 1rem 10px 0px color-mix(in srgb, black, transparent 50%);
+}
+
+header {
+    box-sizing: border-box;
+    background-color: rgba(33, 33, 33, 0.5);
+    color: white;
+    padding: 1rem;
+}
+
+header>h2 {
+    font-size: 0.8rem;
+    font-weight: 800;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 5rem 0px 2rem 0px;
+}
+
+main>h2 {
+    box-sizing: border-box;
+    background-color: rgba(224, 224, 224, 0.5);
+    font-size: 1.8rem;
+    padding: 1rem;
+}
+
+main>#announcement {
+    margin: 1rem 0 0.5rem 1rem;
+    font-weight: 800;
+}
+
+main>#timeline {
+    background-color: rgba(66, 66, 66, 0.5);
+    margin-inline: 1rem;
+    width: fit-content;
+    padding: 1rem;
+    color: white;
+    font-weight: 800;
+}
+
+#timeline sup {
+    color: red;
+}
+
+main>#footnote {
+    margin: 2rem 0 0 1rem;
+    padding-bottom: 1rem;
+    color: red;
+    font-style: italic;
+}
+
+footer {
+    box-sizing: border-box;
+    background-color: rgba(33, 33, 33, 0.5);
+    color: white;
+    padding: 1rem;
+}
+
+footer>h2 {
+    font-size: 1.2rem;
+}
+
+footer > div > img {
+    border: .1rem solid color-mix(in srgb, white, black);
+    border-radius: .1rem;
+    padding: .3rem;
+}

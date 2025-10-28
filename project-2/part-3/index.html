@@ -1,28 +1,294 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-   <meta charset="utf-8">
-   <title>Chapter 5</title>
-   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="variables-palette-7.css" >   
-   <link rel="stylesheet" href="globals.css" />
-</head>
-<body>
-<form >
-<fieldset>
-   <legend>Advanced Art Work Search</legend>
-   
-    <div id="search-box">
-     
-    </div>   
-    <div id="settings-box">
+  <head>
+    <meta charset="utf-8" />
+    <title>Chapter 5</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="variables-palette-7.css" />
+    <link rel="stylesheet" href="globals.css" />
+  </head>
+
+  <body>
+    <form action="http://www.randyconnolly.com/tests/process.php" method="get">
+      <fieldset class="sections-box">
+        <legend>Advanced Art Work Search</legend>
+        <div id="inputs-box">
+          <div id="search-box" class="section">
+            <div id="inner-search-box">
+              <input
+                name="search"
+                placeholder="Search titles"
+                id="search"
+                type="search"
+                class="box-input"
+              />
+            </div>
+
+            <div id="subject-box">
+              <p>Subject:</p>
+              <label for="subject-history" class="subject-option">
+                <input
+                  name="subject"
+                  type="radio"
+                  id="subject-history"
+                  value="0"
+                />
+                History
+              </label>
+              <label for="subject-person" class="subject-option">
+                <input
+                  name="subject"
+                  type="radio"
+                  id="subject-person"
+                  value="1"
+                />
+                Person
+              </label>
+              <label for="subject-landscape" class="subject-option">
+                <input
+                  name="subject"
+                  type="radio"
+                  id="subject-landscape"
+                  value="2"
+                />
+                Landscape
+              </label>
+            </div>
+            <select name="genre" class="box-input">
+              <option value="">Select Genre</option>
+              <option value="0">Baroque</option>
+              <option value="1">Renaissance</option>
+              <option value="2">Realism</option>
+            </select>
+
+            <button class="box-input">Filter</button>
+          </div>
+
+          <div id="settings-box" class="section">
+            <select name="bulk-actions" class="box-input">
+              <option value="">Bulk Actions</option>
+              <option value="0">Archive</option>
+              <option value="1">Edit</option>
+              <option value="2">Delete</option>
+              <option value="3">Collection</option>
+            </select>
+            <button class="box-input">Apply To All</button>
+          </div>
+        </div>
+
+        <div id="painting-box" class="section">
+          <table>
+            <caption>
+              Paintings
+            </caption>
+            <colgroup>
+              <col id="title-col" />
+              <col id="artist-col" />
+              <col id="year-col" />
+              <col id="genre-col" />
+              <col id="actions-col" />
+            </colgroup>
+            <thead>
+              <tr id="header-row">
+                <th id="title-header" class="table-header">Title</th>
+                <th class="table-header">Artist</th>
+                <th class="table-header">Year</th>
+                <th class="table-header">Genre</th>
+                <th class="table-header">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="painting-row">
+                <td class="painting-row-title">
+                  <input type="checkbox" name='index[]' value="0" />
+                  <img
+                    src="./images/125010.jpg"
+                    class="painting-row-title-img"
+                    alt="Portrait of Alida Christina Assink"
+                  />
+                  <p class="painting-row-title-text">
+                    Portrait of Alida Christina Assink
+                  </p>
+                </td>
+                <td class="painting-row-artist">
+                  <p>Kruseman, Jan</p>
+                </td>
+                <td class="painting-row-year">1833</td>
+                <td class="painting-row-genre">Realism</td>
+                <td class="painting-row-actions">
+                  <button type="button" class="box-input action-button">
+                    <a href="./images/edit.png">
+                      <img src="./images/edit.png" alt="Edit Action" />
+                    </a>
+                  </button>
+                  <button type="button" class="box-input action-button outline-button">
+                    <a href="./images/archive.png">
+                      <img src="./images/archive.png" alt="Archive Action" />
+                    </a>
+                  </button>
+                  <button type="button" class="box-input action-button outline-button">
+                    <a href="./images/delete.png">
+                      <img src="./images/delete.png" alt="Delete Action" />
+                    </a>
+                  </button>
+                </td>
+              </tr>
+
+              <tr class="painting-row">
+                <td class="painting-row-title">
+                  <input type="checkbox" name='index[]' value="1" />
+                  <img
+                    src="./images/125020.jpg"
+                    class="painting-row-title-img"
+                    alt="Portrait of William II, King of the Netherlands"
+                  />
+                  <p class="painting-row-title-text">
+                    Portrait of William II, King of the Netherlands
+                  </p>
+                </td>
+                <td class="painting-row-artist">
+                  <p>Kruseman, Jan</p>
+                </td>
+                <td class="painting-row-year">1839</td>
+                <td class="painting-row-genre">Realism</td>
+                <td class="painting-row-actions">
+                  <button type="button" class="box-input action-button">
+                    <a href="./images/edit.png">
+                      <img alt="Edit Action" src="./images/edit.png" />
+                    </a>
+                  </button>
+                  <button type="button" class="box-input action-button outline-button">
+                    <a href="./images/archive.png">
+                      <img alt="Archive Action" src="./images/archive.png" />
+                    </a>
+                  </button>
+                  <button type="button" class="box-input action-button outline-button">
+                    <a href="./images/delete.png">
+                      <img alt="Delete Action" src="./images/delete.png" />
+                    </a>
+                  </button>
+                </td>
+              </tr>
+
+              <tr class="painting-row">
+                <td class="painting-row-title">
+                  <input type="checkbox" name='index[]' value="2" />
+                  <img
+                    src="./images/130020.jpg"
+                    class="painting-row-title-img"
+                    alt="Three girls from the Amsterdam Orphanage"
+                  />
+                  <p class="painting-row-title-text">
+                    Three girls from the Amsterdam Orphanage
+                  </p>
+                </td>
+                <td class="painting-row-artist">
+                  <p>Schwartze, Therese</p>
+                </td>
+                <td class="painting-row-year">1885</td>
+                <td class="painting-row-genre">Realism</td>
+                <td class="painting-row-actions">
+                  <button type="button" class="box-input action-button">
+                    <a href="./images/edit.png">
+                      <img alt="Edit Action" src="./images/edit.png" />
+                    </a>
+                  </button>
+                  <button type="button" class="box-input action-button outline-button">
+                    <a href="./images/archive.png">
+                      <img alt="Archive Action" src="./images/archive.png" />
+                    </a>
+                  </button>
+                  <button type="button" class="box-input action-button outline-button">
+                    <a href="./images/delete.png">
+                      <img alt="Delete Action" src="./images/delete.png" />
+                    </a>
+                  </button>
+                </td>
+              </tr>
+
+              <tr class="painting-row">
+                <td class="painting-row-title">
+                  <input type="checkbox" name='index[]' value="3" />
+                  <img
+                    src="./images/127010.jpg"
+                    class="painting-row-title-img"
+                    alt="The Windmill at Wijk bij Duurstede"
+                  />
+                  <p class="painting-row-title-text">
+                    The Windmill at Wijk bij Duurstede
+                  </p>
+                </td>
+                <td class="painting-row-artist">
+                  <p>Ruisdael, Jacob van</p>
+                </td>
+                <td class="painting-row-year">1670</td>
+                <td class="painting-row-genre">Dutch Golden Age</td>
+                <td class="painting-row-actions">
+                  <button type="button" class="box-input action-button">
+                    <a href="./images/edit.png">
+                      <img alt="Edit Action" src="./images/edit.png" />
+                    </a>
+                  </button>
+                  <button type="button" class="box-input action-button outline-button">
+                    <a href="./images/archive.png">
+                      <img alt="Archive Action" src="./images/archive.png" />
+                    </a>
+                  </button>
+                  <button type="button" class="box-input action-button outline-button">
+                    <a href="./images/delete.png">
+                      <img alt="Delete Action" src="./images/delete.png" />
+                    </a>
+                  </button>
+                </td>
+              </tr>
 
 
-    </div>
-    <div id="painting-box">
+              <tr class="painting-row">
+                <td class="painting-row-title">
+                  <input type="checkbox" name='index[]' value="4" />
+                  <img
+                    src="./images/128010.jpg"
+                    class="painting-row-title-img"
+                    alt="Morning Ride Along the Beach"
+                  />
+                  <p class="painting-row-title-text">
+                    Morning Ride Along the Beach
+                  </p>
+                </td>
+                <td class="painting-row-artist">
+                  <p>Mauve, Anton</p>
+                </td>
+                <td class="painting-row-year">1871</td>
+                <td class="painting-row-genre">Realism</td>
+                <td class="painting-row-actions">
+                  <button type="button" class="box-input action-button">
+                    <a href="./images/edit.png">
+                      <img alt="Edit Action" src="./images/edit.png" />
+                    </a>
+                  </button>
+                  <button type="button" class="box-input action-button outline-button">
+                    <a href="./images/archive.png">
+                      <img alt="Archive Action" src="./images/archive.png" />
+                    </a>
+                  </button>
+                  <button type="button" class="box-input action-button outline-button">
+                    <a href="./images/delete.png">
+                      <img alt="Delete Action" src="./images/delete.png" />
+                    </a>
+                  </button>
+                </td>
+              </tr>
 
-    </div> 
-</fieldset>  
-</form>
-</body>
+
+            </tbody>
+          </table>
+        </div>
+      </fieldset>
+    </form>
+  </body>
 </html>

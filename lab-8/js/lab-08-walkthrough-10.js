@@ -45,7 +45,6 @@
 //example2.output()
 
 
-// NOTE: I prefer using classes over constructor functions
 class Order {
   constructor(product, price, quantity) {
     this.product = product;

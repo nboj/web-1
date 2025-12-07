@@ -1,0 +1,82 @@
+:root {
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+}
+
+html, body {
+    min-height: 100vh;
+    height: fit-content;
+}
+
+h1 {
+  font-size: clamp(2.25rem, 2.5vw + 1.5rem, 3rem);
+  letter-spacing: -0.03em;
+}
+
+h2 {
+  font-size: clamp(1.875rem, 2vw + 1rem, 2.25rem);
+  letter-spacing: -0.02em;
+}
+
+h3 {
+  font-size: clamp(1.5rem, 1.5vw + 0.9rem, 1.875rem);
+  letter-spacing: -0.015em;
+}
+
+h4 {
+  font-size: clamp(1.25rem, 1.2vw + 0.8rem, 1.5rem);
+  letter-spacing: -0.01em;
+}
+
+h5 {
+  font-size: clamp(1.125rem, 0.8vw + 0.8rem, 1.25rem);
+  letter-spacing: -0.005em;
+}
+
+h6 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+}
+
+input {
+    border: 1px solid color-mix(in srgb, black, transparent 80%);
+    border-radius: 5px;
+    padding: .5rem 1rem;
+    width: 100%;
+    cursor: text;
+}
+
+label {
+    position: absolute;
+    left: 1rem;
+    color: color-mix(in srgb, black, transparent 50%);
+}
+
+button {
+    color: white;
+    border-radius: 5px;
+    width: fit-content;
+    padding: .5rem 1.5rem;
+    cursor: pointer
+}
+
+#login-container {
+    padding: 3rem;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.hide-password-toggle-icon {
+    width: 16px;
+}
+
+#hide-button {
+    position: absolute;
+    right: 0;
+}
+
+#password-hide-icon {
+    display: none;
+}

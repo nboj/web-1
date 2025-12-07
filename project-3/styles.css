@@ -75,6 +75,7 @@ button {
 #hide-button {
     position: absolute;
     right: 0;
+    z-index: 5;
 }
 
 #password-hide-icon {

@@ -23,10 +23,15 @@ const handleSubmit = (e) => {
         loginErrorMessage.textContent = "Incorrect password";
         return
     }
-    window.location.href = "/home/"
+    sessionStorage.setItem("signed-in", true);
+    window.location.href = "/"
 };
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", (_e) => {
+    const signedIn = sessionStorage.getItem("signed-in") === "true";
+    if (signedIn) {
+        window.location.href = "/";
+    }
     loginErrorMessage = document.querySelector("#login-error-message");
     console.log(loginErrorMessage);
 

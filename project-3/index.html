@@ -1,43 +1,18 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link href="styles.css" type="text/css" rel="stylesheet" />
-    <script src="index.js"></script>
-  </head>
 
-  <body class="flex justify-center items-center relative">
-    <img
-      alt="Abstract login background"
-      src="images/login-bg.png"
-      class="absolute z-[-1] object-cover w-full h-full"
-    />
-    <main id="login-container">
-      <div class="w-[90%] mx-auto text-center">
-        <h4 class="font-bold mb-[.5rem]">Login</h4>
-        <p>Enter your email and password to access the site</p>
-      </div>
-      <form
-        id="login-form"
-        class="flex flex-col gap-[.5rem] py-[1rem] pt-[2rem]"
-      >
-        <div class="flex items-center relative">
-          <label id="login-username-label" for="login-username">Username</label>
-          <input id="login-username" type="text" name="username" />
-        </div>
-        <div class="flex items-center relative">
-          <label id="login-password-label" for="login-password">Password</label>
-          <input id="login-password" type="password" name="password" />
-          <button id="hide-button" type="button">
-            <img alt="Show password icon" src="images/show.png" class="hide-password-toggle-icon" id="password-show-icon" />
-            <img alt="Hide password icon" src="images/hide.png" class="hide-password-toggle-icon" id="password-hide-icon" />
-          </button>
-        </div>
-        <p class="text-red-500 text-sm" id="login-error-message"></p>
-        <button class="bg-blue-500" type="submit">Login</button>
-      </form>
-    </main>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="../styles.css" type="text/css" rel="stylesheet" />
+  <script src="./script.js"></script>
+</head>
+
+<body>
+  <main>
+    <h3>hello</h3>
+  </main>
+</body>
+
 </html>

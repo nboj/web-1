@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="../styles.css" type="text/css" rel="stylesheet" />
+    <script src="../auth-check.js"></script>
+    <script src="./script.js"></script>
+    <title>RYUG Shop</title>
+  </head>
+
+  <body>
+    <ryug-navbar> </ryug-navbar>
+    <main class="overflow-hidden my-[1rem] max-w-[1200px] mx-auto p-[1rem]">
+      <div class="my-[2rem]">
+        <h3>Checkout what we have in stock!</h3>
+        <p>We have plethora of items to choose from...</p>
+      </div>
+      <form>
+        <div class="flex gap-[.5rem]">
+          <div class="flex items-center relative w-full">
+            <label for="shop-search">Search</label>
+            <input id="shop-search" name="serch" type="search" />
+          </div>
+          <select name="sort">
+            <option value="">Default</option>
+            <option value="title">Title</option>
+            <option value="description">Description</option>
+            <option value="condition">Condition</option>
+            <option value="price">Price</option>
+          </select>
+          <button class="bg-blue-500">Go</button>
+        </div>
+      </form>
+      <div class="overflow-auto">
+        <table class="m-auto mt-[1rem] mb-[5rem] w-full">
+          <caption class="bg-cyan-600 text-white p-[.5rem]">
+            Shop
+          </caption>
+          <thead>
+            <tr class="">
+              <th>Title</th>
+              <th>Description</th>
+              <th>Condition</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody class="overflow-scroll">
+            <tr
+              is="ryug-shop-item"
+              title="The Emotionally Conflicted Vase"
+              description="A vase that can’t decide whether it’s modern art or a melted candle."
+              condition="Questionably stable"
+              price="12.99"
+            ></tr>
+            <tr
+              is="ryug-shop-item"
+              title="Screaming Sunflower Lamp"
+              description="Its expression says “Please turn me off,” but its brightness says otherwise."
+              condition="Loud"
+              price="19.99"
+            ></tr>
+            <tr
+              is="ryug-shop-item"
+              title="Hand-Knitted Sweater for Unknown Creature"
+              description="Too small for a person, too big for a cat. Who is this for? You decide."
+              condition="Philosophically confusing"
+              price="9.49"
+            ></tr>
+            <tr
+              is="The Haunted Sandwich Toaster"
+              title="The Emotionally Conflicted Vase"
+              description="Makes grilled cheese… sometimes screams."
+              condition="Works on even-numbered days"
+              price="24.00"
+            ></tr>
+            <tr
+              is="ryug-shop-item"
+              title="DIY Clock with No Numbers"
+              description="Time is a social construct; guessing is part of the fun."
+              condition="Conceptually functional"
+              price="7.77"
+            ></tr>
+            <tr
+              is="ryug-shop-item"
+              title="Decorative Rock With Eyes"
+              description="Watches you while you sleep."
+              condition="Alive?"
+              price="4.26"
+            ></tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <ryug-footer></ryug-footer>
+    <script type="module" src="../components/navbar.js"></script>
+    <script type="module" src="../components/footer.js"></script>
+    <script type="module" src="../components/shop-item.js"></script>
+  </body>
+</html>

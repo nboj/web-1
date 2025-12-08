@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="../styles.css" type="text/css" rel="stylesheet" />
+    <link href="./styles.css" type="text/css" rel="stylesheet" />
+    <script src="../auth-check.js"></script>
+    <script src="./script.js"></script>
+    <title>RYUG Contact Us</title>
+  </head>
+
+  <body>
+    <ryug-navbar></ryug-navbar>
+    <main class="max-w-[1000px] m-auto p-[1rem]">
+      <div class="my-[1rem]">
+      <ryug-ad href="/shop/" variant="warning"></ryug-ad>
+      </div>
+      <div class="relative min-h-[50vi] flex justify-center items-center">
+        <img
+          alt="Abstract background art"
+          src="../images/banner-3.png"
+          class="absolute z-[-1] h-full object-contain object-center w-full"
+        />
+        <h3>Contact us at <strong>RYUG</strong>!</h3>
+      </div>
+      <div class="flex justify-center items-center my-[3rem]">
+        <form id="contact-form">
+          <div class="flex flex-col gap-[1rem]">
+            <div class="relative flex justify-center items-center">
+              <label for="contact-name">Name</label>
+              <input id="contact-name" type="text" />
+            </div>
+            <div class="relative flex justify-center items-center">
+              <label for="contact-email">Your Email</label>
+              <input id="contact-email" type="email" />
+            </div>
+            <textarea placeholder="Ask any question!"></textarea>
+            <button class="bg-cyan-600" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <ryug-footer></ryug-footer>
+    <script type="module" src="../components/navbar.js"></script>
+    <script type="module" src="../components/footer.js"></script>
+    <script type="module" src="../components/ad.js"></script>
+  </body>
+</html>

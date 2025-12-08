@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="../styles.css" type="text/css" rel="stylesheet" />
+    <link href="./styles.css" type="text/css" rel="stylesheet" />
+    <script src="../auth-check.js"></script>
+    <title>RYUG Discount</title>
+  </head>
+
+  <body>
+    <ryug-navbar> </ryug-navbar>
+    <main>
+      <div
+        id="header"
+        class="relative md:min-h-auto sm:min-h-[50vi] max-h-[600px] flex justify-center gap-[4rem] items-center p-[4rem]"
+      >
+        <h3>Get Your Special <strong>RYUG</strong> Discount!</h3>
+        <img
+          alt="Background image of dollar bills"
+          src="../images/money.png"
+          class="w-[50%] max-w-[400px] min-h-[150px] h-full object-center object-contain z-[-1] opacity-[.5]"
+        />
+      </div>
+      <p id="discount-message" class="mt-4 font-bold text-lg text-center"></p>
+      <div class="p-[2rem]">
+        <ryug-discount-row>
+          <ryug-discount-slot
+            key="1"
+          ></ryug-discount-slot>
+          <ryug-discount-slot
+            key="2"
+          ></ryug-discount-slot>
+          <ryug-discount-slot
+            key="3"
+          ></ryug-discount-slot>
+        </ryug-discount-row>
+        <ryug-discount-row>
+          <ryug-discount-slot
+            key="4"
+          ></ryug-discount-slot>
+          <ryug-discount-slot
+            key="5"
+          ></ryug-discount-slot>
+          <ryug-discount-slot
+            key="6"
+          ></ryug-discount-slot>
+        </ryug-discount-row>
+        <ryug-discount-row>
+          <ryug-discount-slot
+            key="7"
+          ></ryug-discount-slot>
+          <ryug-discount-slot
+            key="8"
+          ></ryug-discount-slot>
+          <ryug-discount-slot
+            key="9"
+          ></ryug-discount-slot>
+        </ryug-discount-row>
+      </div>
+    </main>
+    <ryug-footer></ryug-footer>
+    <script type="module" src="../components/navbar.js"></script>
+    <script type="module" src="../components/footer.js"></script>
+    <script type="module" src="../components/discount-slot.js"></script>
+    <script type="module" src="../components/discount-row.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

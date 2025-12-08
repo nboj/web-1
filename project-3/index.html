@@ -1,18 +1,68 @@
 <!doctype html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="../styles.css" type="text/css" rel="stylesheet" />
+    <script src="./auth-check.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <link href="../styles.css" type="text/css" rel="stylesheet" />
-  <script src="./script.js"></script>
-</head>
+  <body>
+    <ryug-navbar> </ryug-navbar>
+    <header
+      class="relative flex w-full justify-center items-center flex-col min-h-[50vi]"
+    >
+      <img
+        class="absolute w-full h-full object-contain z-[-1]"
+        src="./images/banner.png"
+        alt="Abstract background image"
+      />
+      <h3>Welcome to RYUG!</h3>
+      <p class="text-center">Where ugly gifts come to find their forever homes.</p>
+    </header>
+    <main class="max-w-[800px] mx-auto flex flex-col gap-[5rem] py-[5rem]">
+      <ryug-card
+        title="About"
+        description="At RYUG, we specialize in the unusual, the unwanted, the aggressively unattractive — and we proudly recycle them into new opportunities. Whether you’re looking for a conversation starter or a unique gift for someone you don’t particularly like, we’ve got you covered."
+        src="./images/garbage-1.jpg"
+      >
+        <p slot="description">
+          At RYUG, we specialize in the unusual, the unwanted, the aggressively
+          unattractive — and we proudly recycle them into new opportunities.
+          Whether you’re looking for a conversation starter or a unique gift for
+          someone you don’t particularly like, we’ve got you covered.
+        </p>
+      </ryug-card>
 
-<body>
-  <main>
-    <h3>hello</h3>
-  </main>
-</body>
+      <ryug-card
+        title="Our Mission"
+        reverse="true"
+        src="./images/garbage-2.jpg"
+      >
+        <p slot="description">
+          To rescue ugly gifts from dusty closets and lonely basements, giving
+          them the spotlight they truly (don’t) deserve.
+        </p>
+      </ryug-card>
 
+      <ryug-card title="Featured Categories" src="./images/garbage-3.jpg">
+        <ul slot="description" class="list-disc list-inside">
+          <li>Questionable Decor</li>
+          <li>Mysterious Gadgets</li>
+          <li>Clothes That Shouldn’t Exist</li>
+          <li>Kitchen Things That Look Alive</li>
+          <li>Collectibles That Should Stay Uncollected</li>
+        </ul>
+      </ryug-card>
+      <ryug-ad
+        href="/shop/"
+      ></ryug-ad>
+    </main>
+    <ryug-footer></ryug-footer>
+    <script type="module" src="./components/navbar.js"></script>
+    <script type="module" src="./components/card.js"></script>
+    <script type="module" src="./components/footer.js"></script>
+    <script type="module" src="./components/ad.js"></script>
+  </body>
 </html>

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="../styles.css" type="text/css" rel="stylesheet" />
+    <script src="../auth-check.js"></script>
+    <title>RYUG History</title>
+  </head>
+
+  <body>
+    <ryug-navbar> </ryug-navbar>
+    <main class="p-[1rem]">
+      <div class="relative min-h-[50vi] flex justify-center items-center">
+        <img
+          alt="Abstract background art"
+          src="../images/banner-2.png"
+          class="absolute z-[-1] h-full object-contain object-center w-full"
+        />
+        <h3>
+          The History of <strong>RYUG</strong> — <em>A legacy of Ugly Gifts</em>
+        </h3>
+      </div>
+      <ryug-text-scroller>
+        <span class="item">
+          <span class="dot"></span>
+          Ugly Gift Anonymous
+        </span>
+        <span class="item">
+          <span class="dot"></span>
+          Questionable Decor Society
+        </span>
+        <span class="item">
+          <span class="dot"></span>
+          Regift Recycling Co.
+        </span>
+        <span class="item">
+          <span class="dot"></span>
+          Awkward Aunt Association
+        </span>
+      </ryug-text-scroller>
+      <div class="flex flex-col gap-[3rem] my-[4rem] max-w-[780px] mx-auto">
+        <p>
+          RYUG was founded in 2025 after our creator, Christian, received seven
+          consecutive ugly gifts during the holiday season — including a ceramic
+          goose wearing cowboy boots. Realizing there must be others suffering
+          from similar gift-related trauma, RYUG was born.
+        </p>
+        <div>
+          <p>The name Recycle Your Ugly Gift represents our mission:</p>
+          <p>
+            to rescue, rehome, and repurpose items that were once considered
+            unwantable.
+          </p>
+        </div>
+        <p>
+          Over the years, RYUG has grown into a thriving marketplace of
+          oddities. Our customers embrace uniqueness, horror, confusion, and the
+          occasional regret.
+        </p>
+        <p>
+          Today, we proudly host hundreds of items — each one with a story, a
+          past, and a level of ugliness that inspires awe.
+        </p>
+        <iframe
+          height="315"
+          src="https://www.youtube.com/embed/NyJVQiai1RM?si=LkosrasGiKMRHTJb"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+
+        <ryug-ad href="/shop/" variant="premium"></ryug-ad>
+      </div>
+    </main>
+    <ryug-footer></ryug-footer>
+    <script type="module" src="../components/navbar.js"></script>
+    <script type="module" src="../components/footer.js"></script>
+    <script type="module" src="../components/text-scroller.js"></script>
+    <script type="module" src="../components/ad.js"></script>
+  </body>
+</html>

@@ -1,10 +1,10 @@
 const paths = [
     ["Home", new URL("../", import.meta.url)],
     ["Shop", new URL("../shop/", import.meta.url)],
-    ["History", new URL("/project-3/history/", import.meta.url)],
-    ["Discount", new URL("/project-3/discount/", import.meta.url)],
-    ["Contact us", new URL("/project-3/contact/", import.meta.url)],
-    ["Sign out", new URL("/project-3/sign-out/", import.meta.url)],
+    ["History", new URL("../history/", import.meta.url)],
+    ["Discount", new URL("../discount/", import.meta.url)],
+    ["Contact us", new URL("../contact/", import.meta.url)],
+    ["Sign out", new URL("../sign-out/", import.meta.url)],
 ];
 class Navbar extends HTMLElement {
     constructor() {

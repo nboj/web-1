@@ -1,10 +1,10 @@
 const paths = [
-    ["Home", "/"],
-    ["Shop", "/shop/"],
-    ["History", "/history/"],
-    ["Discount", "/discount/"],
-    ["Contact us", "/contact/"],
-    ["Sign out", "/sign-out/"],
+    ["Home", "/project-3/"],
+    ["Shop", "/project-3/shop/"],
+    ["History", "/project-3/history/"],
+    ["Discount", "/project-3/discount/"],
+    ["Contact us", "/project-3/contact/"],
+    ["Sign out", "/project-3/sign-out/"],
 ];
 class Navbar extends HTMLElement {
     constructor() {

@@ -24,13 +24,13 @@ const handleSubmit = (e) => {
         return
     }
     sessionStorage.setItem("signed-in", true);
-    window.location.href = "/"
+    window.location.href = "/project-3/"
 };
 
 document.addEventListener("DOMContentLoaded", (_e) => {
     const signedIn = sessionStorage.getItem("signed-in") === "true";
     if (signedIn) {
-        window.location.href = "/";
+        window.location.href = "/project-3/";
     }
     loginErrorMessage = document.querySelector("#login-error-message");
     console.log(loginErrorMessage);
